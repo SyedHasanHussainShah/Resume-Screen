@@ -104,3 +104,84 @@ Simple CSV structure:
 ## API Endpoints
 - POST /api/upload - Upload resume
 - GET /api/results/{resume_id} - Get analysis results
+
+
+## Step-by-Step Setup Guide
+
+These steps assume you're on a system with Python and Node.js (or Yarn) installed.
+
+if not go to google serach python and install python version 11 not install 13 bcz it may lack some packages then for 
+node.js install in google search node.js and download it according to your coressponding device
+
+1. Clone the repository or Download the repo 
+git clone https://github.com/SyedHasanHussainShah/Resume-Screen.git
+cd resume-screening-system-using-ml
+
+## Set up the Backend (FastAPI)
+
+Navigate to the backend folder:
+
+cd backend
+
+
+## Create and activate a Python virtual environment:
+
+python -m venv venv
+source venv/bin/activate   # Linux/macOS
+venv\Scripts\activate      # Windows PowerShell
+
+
+## Install required packages:
+
+pip install -r requirements.txt
+
+
+## Start the API server:
+
+uvicorn resume-screener:app --reload
+
+If its work successfully then show application strat Something like message 
+if show 404 error then tell us 
+
+You should see FastAPI starting (default port should be 8000).
+
+After running
+
+Open your browser at: http://127.0.0.1:8000
+
+this site can open 
+
+## Set up the Frontend (React)
+
+Open a new commad prompt in vs code, and navigate to the frontend folder (usually resume-screener or similar):
+
+cd resume-screening-system-using-ml-main\resume-screener
+
+## Install dependencies:
+
+npm install  
+
+
+## Start the React dev server:
+
+npm run dev  
+
+
+The UI should now be available (often on localhost:3000).
+
+Go to that link
+
+Local:   http://localhost:5173/
+
+## Username and Password 
+
+Username: admin
+Password: admin123
+
+## Verify Everything Works Together
+
+Open the frontend in your browser.
+
+Upload a job description and resume(s).
+
+The interface should provide animated feedback: match scores, dashboards, rankings, etc.
